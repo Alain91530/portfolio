@@ -20,8 +20,8 @@ aside {
   width: 20%;
 }
 
-header {
-  width: 80%;
+.conent {
+  display: flex;
 }
 .logo {
 /*  float: left; */
@@ -29,4 +29,8 @@ header {
 }
 .name {
   float: right;
+}
+main {
+  background-color: lightgrey;
+  display: flex;
 }
