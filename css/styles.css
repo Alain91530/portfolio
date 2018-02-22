@@ -1,0 +1,32 @@
+/*
+ *
+ *  Common
+ *
+ */
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-transform: uppercase;t
+}
+
+aside {
+  width: 20%;
+}
+
+header {
+  width: 80%;
+}
+.logo {
+/*  float: left; */
+  max-width: 3em;
+}
+.name {
+  float: right;
+}
