@@ -4,33 +4,58 @@
  *
  */
 body {
-  width: 100%;
+  max-width: 900px;
   font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1 {
   font-size: 3em;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 h4 {
-  text-transform: uppercase;t
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 aside {
   width: 20%;
 }
 
-.conent {
+.content {
   display: flex;
+  flex-wrap: wrap;
+}
+.illustration {
+  width: 100%;
 }
 .logo {
-/*  float: left; */
+  float: left;
+  margin: 1em;
   max-width: 3em;
 }
-.name {
-  float: right;
+.nameAndJob {
+  margin-right: 1em;
+  text-align: right;
+  width: 100%
+}
+.project {
+  width: 33%;
+}
+.projectAll {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+header {
+  display: flex;
+  width: 100%
 }
 main {
   background-color: lightgrey;
   display: flex;
+  flex-wrap: wrap;
+  width: 80%;
 }
