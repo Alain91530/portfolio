@@ -137,13 +137,31 @@ main {
   flex-wrap: wrap;
   width: 100%;
 }
-.space {
-  width: 10%;
-}
+
 .projectImg {
   box-sizing: border-box;
   max-width: 100%;
   min-height: 300px;
+}
+.social {
+  border-color: #7d97ad;
+  border-style: solid;
+  border-width: thick 0 0 0;
+  width: 25%;
+}
+
+.social-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  width: 32px;
+  margin: 20px;
+  border-width: thin;
+  border-style: solid;
+  position: relative;
+  left: 10%;
 }
 .work{
   box-sizing: border-box;
