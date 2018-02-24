@@ -27,6 +27,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
+  padding-top: 100px;
 }
 
 figure {
@@ -35,11 +36,14 @@ figure {
 }
 
 header {
+  background-color: white;
   border-width: 0 0 thick 0;
   border-color: #7d97ad;
   border-style: solid;
   display: flex;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -62,12 +66,13 @@ main {
 
 .description {
   background-color: #00000023;
-  bottom: 0;
+
   box-sizing: border-box;
   font-weight: normal;
   margin: 0;
-  position: absolute;
+
   height: 10%;
+  padding-top: 350px;
   text-align: center;
   width: 100%;
 }
@@ -93,7 +98,7 @@ main {
 /*  display: inline-block; */
   height: 400px;
   margin: 0em;
-  position: relative;
+
   width: 100%;
 }
 
@@ -142,7 +147,6 @@ main {
 .work{
   box-sizing: border-box;
   color: #7d97ad;
-  position: relative;
   width: 100%;
 }
 
@@ -162,13 +166,17 @@ main {
 ********************************/
 
 @media screen and (max-width: 655px) {
+  body {
+    padding-top: 80px;
+  }
   h1,
   h4 {
     font-size: .75em;
   }
   .description {
-    font-size: .75em;
+
     height: 15%;
+    padding-top: 250px;
   }
   .illustration {
     height: 300px;
@@ -193,6 +201,9 @@ main {
 
 @media screen and (min-width: 656px) and (max-width: 768px) {
 
+  .description {
+    padding-top: 450px;
+  }
   .illustration {
     width: 40%;
     background-size: contain;
@@ -202,6 +213,7 @@ main {
     width: 50%;
   }
   .featuredwork {
+    padding-top: 1.5em;
     width: 60%;
     max-height: 600px;
   }
