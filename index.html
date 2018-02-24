@@ -5,12 +5,33 @@
 *   A single webpage designed with HTML and CSS                              *
 *   The page is responsive and optimized for desktop, iPad and Nexus 5       *
 *   On the page we find:                                                     *
-*       - A fixed header with a logo, the name and position pof the author         *
+*       - A fixed header with a logo, the name and position pof the author   *
 *       - An illustrating image                                              *
-*       - 1 featured porject                                                 *
+*       - 1 featured project                                                 *
 *       - 4 recent project                                                   *
-*   Eauch project consist in a snapshot image and a caption with tittle and  *
-*   a link                                                                   *
+*   Each project consist in a snapshot image and a caption with tittle and   *
+*   a link.                                                                  *
+*                                                                            *
+*   The html is structured as follow:                                        *
+*      - head                                                                *
+*        - body                                                              *
+*        - header                                                            *
+*        - main                                                              *
+*          - Illustration <figure>                                           *
+*          - Featured work <section>                                         *
+*          - Recent work <section>                                           *
+*              - All projects <div>                                          *
+*                - Project 1 <figure>                                        *
+*                - Project 2 <figure>                                        *
+*                - Project 3 <figure>                                        *
+*                - Project 4 <figure>                                        *
+*                                                                            *
+*   The projects presented here are projects I have already realized:        *
+*     Featured project is this one.                                          *
+*     Project 1 is the first one of FEND (trading card)                      *
+*     Projects 2 and 3 are 2websites I made with WordPress                   *
+*     Project 4 is the same as featured project                              *
+*                                                                            *
 ***************************************************************************-->
 
 <!DOCTYPE html>
@@ -135,7 +156,7 @@
             alt="Udacity fend project 1: Trading Card">
           <figcaption>
             <h2>Trading Card</h2>
-            <a href="https://github.com/Alain91530/portfolio">Download sources</a>
+            <p><a href="https://github.com/Alain91530/portfolio">Download sources</a></p>
           </figcaption>
         </figure>
 
@@ -146,7 +167,7 @@
             alt="Udacity fend project 1: Réinventer l'espace Website">
           <figcaption>
             <h2>Réinventer l'epace</h2>
-            <a href="https://reinventerlespace.archi">WordPress Website</a>
+            <p><a href="https://reinventerlespace.archi">WordPress Website</a><p/>
           </figcaption>
         </figure>
 
@@ -157,18 +178,18 @@
           alt="Depannum Website">
           <figcaption>
             <h2>Dépan'Num</h2>
-            <a href="https://depannum.fr">WordPress Website</a>
+            <p><a href="https://depannum.fr">WordPress Website</a></p>
           </figcaption>
         </figure>
 
         <figure class="project">
           <img
           class="projectImg"
-          src="img/depannum.jpg"
+          src="img/portfolio.jpg"
           alt="Depannum Website">
           <figcaption>
             <h2>Portfolio</h2>
-            <p>link</p>
+            <p><a href="https://github.com/Alain91530/portfolio">Download sources</a></p>
           </figcaption>
         </figure>
 
