@@ -69,7 +69,16 @@ main {
   text-align: center;
   width: 100%;
 }
-
+.featured {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.featuredwork {
+  color: #7d97ad;
+  margin: 0;
+  width: 100%;
+}
 .illustration {
   background-color: #02b3e4;
   background-image: url("../img/responsive.png");
@@ -80,7 +89,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
 /*  display: inline-block; */
-  height: 600px;
+  height: 400px;
   margin: 0em;
   position: relative;
   width: 100%;
@@ -112,10 +121,10 @@ main {
 
 .project {
   margin: 0;
-  width: 33.33%;
+  width: 50%;
 }
 
-.projectAll {
+.projectall {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -126,6 +135,7 @@ main {
 .projectImg {
   box-sizing: border-box;
   max-width: 100%;
+  min-height: 300px;
 }
 .work{
   box-sizing: border-box;
@@ -179,16 +189,20 @@ main {
 
 *******************************/
 
-@media screen and (min-width: 656px) and (max-width: 767px) {
+@media screen and (min-width: 656px) and (max-width: 768px) {
 
   .illustration {
-    width: 66.66%
+    width: 40%;
+    background-size: contain;
+    height: auto;
   }
   .project {
-    width: 100%
+    width: 50%;
   }
-  .work {
-    width: 33.33%
+  .featuredwork {
+    width: 60%;
+    max-height: 600px;
   }
+
 
 }
