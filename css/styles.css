@@ -44,6 +44,7 @@ header {
   flex-wrap: wrap;
   position: fixed;
   top: 0;
+  max-width: 1280px;
   width: 100%;
 }
 
@@ -217,6 +218,22 @@ main {
     width: 60%;
     max-height: 600px;
   }
+}
+
+  /*******************************
+
+      Breakpoint for Desktop
 
 
+  *******************************/
+
+@media screen and (min-width: 1025px) {
+
+  .header {
+    margin-left: 0, auto, 0,auto;
+    max-width: 1280px;
+  }
+  .project {
+    width: 25%;
+  }
 }
