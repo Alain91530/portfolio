@@ -108,12 +108,12 @@ main {
   width: 100%
 }
 
-.logo {
+/*.logo {
   box-sizing: border-box;
   width: 5em;
   margin: .5em 0 0 1em;
   float: left;
-}
+}*/
 
 .name {
   background-image: url("../img/logo.svg");
@@ -121,6 +121,7 @@ main {
     https://pixabay.com/       */
   background-position: left;
   background-repeat: no-repeat;
+  background-size: contain;
   font-size: 3em;
   margin-top: 0;
   text-align: right;
@@ -142,6 +143,7 @@ main {
   box-sizing: border-box;
   max-width: 100%;
   min-height: 300px;
+  object-fit: contain;
 }
 .social {
   border-color: #7d97ad;
