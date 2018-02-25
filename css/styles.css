@@ -54,44 +54,51 @@ main {
   width: 100%;
 }
 
+#recent {
+  width: 100%;
+}
+
 /**************************
 
   Classes
 
 **************************/
 
-
-
 .description {
   background-color: #00000023;
-
   box-sizing: border-box;
   font-weight: normal;
-  margin: 0;
-
   height: 10%;
+  margin: 0;
   padding-top: 350px;
   text-align: center;
   width: 100%;
 }
 
-.illustration {
+#illustration {
   background-color: #02b3e4;
-  background-image: url("../img/responsive.png");
+/*  background-image: url("../img/responsive.png");
 /* credit for responsive image:
     https://pixabay.com/fr/sensible-illustration-page-seo-2044932/ */
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+/*  background-size: contain;
 /*  display: inline-block; */
+  font-size: 3em;
   height: 400px;
   margin: 0em;
 
+
   width: 100%;
+}
+.img-illustration {
+  object-fit: contain;
+  max-width: 30%;
 }
 
 .job {
+  margin-right: 5px;
   text-align: right;
   width: 100%
 }
@@ -112,13 +119,14 @@ main {
   background-size: contain;
   font-size: 3em;
   margin-top: 0;
+  margin-right: 5px;
   text-align: right;
   width: 100%;
 }
 
 .project {
   margin: 0;
-  width: 50%;
+  width: 33%;
 }
 
 .projectall {
@@ -185,12 +193,13 @@ main {
     font-size: .75em;
   }
   .description {
-
+    font-size: 1em;
     height: 15%;
     padding-top: 250px;
   }
-  .illustration {
-    height: 300px;
+  #illustration {
+    font-size: 1.5em;
+    height: 200px;
   }
   .logo {
     width: 20% /*
@@ -205,7 +214,7 @@ main {
 
 /*******************************
 
-    Breakpoint for iPad
+    Breakpoint for vertical iPad
 
 
 *******************************/
@@ -215,34 +224,53 @@ main {
   .description {
     padding-top: 450px;
   }
-  .illustration {
-    width: 20%;
+  /* Set illustration like a left side bar */
+  #illustration {
+    width: 30%;
     background-size: contain;
+    font-size: 1.5em;
     height: auto;
   }
+  .img-illustration {
+    max-width: 100%;
+  }
+  /* Display projects verticatilly in the rest of the screen */
   .project {
     width: 100%;
   }
   .projectall {
-    width: 80%
+    width: 70%
   }
+    #recent {
+    padding-top: .75em;
 }
 
-  /*******************************
+/*******************************
 
-      Breakpoint for Desktop
+    Breakpoint for horizontal iPad
 
 
-  *******************************/
+*******************************/
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
-  .header {
-    margin-left: 0, auto, 0,auto;
-    max-width: 1280px;
+  .description {
+    padding-top: 450px;
   }
-  .project {
-    width: 33.33%;
+  #illustration {
+    width: 100%;
+    background-size: contain;
+  /*  height: 40%; */
+  }
+  #project-1 {
+    width: 100%;
+  }
+  #project-2 {
+  width: 50%;
+  }
+  .projectall {
+    width: 100%
   }
 
+  }
 }
