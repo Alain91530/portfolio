@@ -60,10 +60,7 @@ main {
 
 **************************/
 
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .description {
   background-color: #00000023;
@@ -77,16 +74,7 @@ main {
   text-align: center;
   width: 100%;
 }
-.featured {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.featuredwork {
-  color: #7d97ad;
-  margin: 0;
-  width: 100%;
-}
+
 .illustration {
   background-color: #02b3e4;
   background-image: url("../img/responsive.png");
@@ -168,6 +156,8 @@ main {
 .work{
   box-sizing: border-box;
   color: #7d97ad;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -226,17 +216,15 @@ main {
     padding-top: 450px;
   }
   .illustration {
-    width: 40%;
+    width: 20%;
     background-size: contain;
     height: auto;
   }
   .project {
-    width: 50%;
+    width: 100%;
   }
-  .featuredwork {
-    padding-top: 1.5em;
-    width: 60%;
-    max-height: 600px;
+  .projectall {
+    width: 80%
   }
 }
 
@@ -254,6 +242,7 @@ main {
     max-width: 1280px;
   }
   .project {
-    width: 25%;
+    width: 33.33%;
   }
+
 }
