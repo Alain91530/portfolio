@@ -3,7 +3,9 @@
   Elements
 
 */
- h1, h3, h4 {
+h1,
+h3,
+h4 {
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -24,6 +26,7 @@ h4 {
 */
 body {
   font-family: sans-serif;
+  background-color: lightblue;
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
@@ -34,17 +37,19 @@ figure {
   color: black;
   text-align: center;
 }
-
+/* Header fixed at top of the page */
 header {
-  background-color: white;
+  background-color: lightblue; /* Hiding content scrolling over the header */
   border-width: 0 0 thick 0;
   border-color: #7d97ad;
   border-style: solid;
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
+  max-width: 1280px;           /* same max width as body   */
+  padding-top: 5px;
+  position: fixed;             /* fixed header  at the top */
   top: 0;
-  max-width: 1280px;
+
   width: 100%;
 }
 
@@ -159,8 +164,8 @@ main {
   margin: 20px;
   border-width: thin;
   border-style: solid;
-  position: relative;
-  left: 10%;
+  margin-left: 20%;
+
 }
 #work{
   box-sizing: border-box;
@@ -338,7 +343,8 @@ main {
     width: 100%;
   }
   #project-2 {
-  width: 50%;
+  padding-right: 1%;
+  width: 49%;
   }
   #project-3 {
     width: 50%;
@@ -358,20 +364,33 @@ main {
 ************************************/
 
 @media screen and (min-width: 1025px) {
+
+/* Illustration image full width */
+
   #illustration {
     width: 100%;
     background-size: contain;
     height: auto;
     }
+
   #name {
     font-weight: lighter;
   }
+
+/* one third of the width for each project */
+
   .project {
     width: 33.33%;
     }
-/*  #project-2 {
-  width: 33.33%;
-  }
+
+  /* Middle project has margins      */
+
+  #project-2 {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 31.66%;
+    }
+
   #project-3 {
     width: 33%;
   }
@@ -381,6 +400,11 @@ main {
   #recent {
     padding-top: .75em;
   }
+
+  /* Adjust padding to Display
+     "Responsive design matters"
+     inside the image             */
+     
   .content {
     padding-top: 100px;
   }
