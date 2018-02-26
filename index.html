@@ -105,7 +105,10 @@
         <figure id="illustration">
           <p class="responsive">Responsive design matters!<p>
 <!--       credit for responsive image:
-           https://pixabay.com/fr/sensible-illustration-page-seo-2044932/ -->
+           https://pixabay.com/fr/sensible-illustration-page-seo-2044932/
+           responsive image loading the right size with srcset
+           For a real web site, the different sizes might not need so
+           many choices. Made only as it was a pratice exercice       -->
           <img
             class="img-illustration"
             src="img/responsive_320.png"
@@ -144,10 +147,24 @@
 *                                                                            *
 ***************************************************************************-->
 
+<!--  responsive image loading the right size with srcset
+      For a real web site, the different sizes might not need so
+      many choices. Made only beacuse it was a praticizing exercice        -->
+
           <figure id="project-1" class="project">
             <img
               class="projectImg"
-              src="img/tradingcard.jpg"
+              src="img/tradingcard_810.jpg"
+              srcset="img/tradingcard_365.jpg 365w,
+                      img/tradingcard_640.jpg 640w,
+                      img/tradingcard_605.jpg 605w,
+                      img/tradingcard_810.jpg 810w,
+                      img/tradingcard_430.jpg 430w"
+              sizes="(max-width: 380px) 365px,
+                     (max-width: 655px) 640px,
+                     (max-width: 768px) 605px,
+                     (max-width: 1024px) 810px,
+                     430px"
               alt="Udacity fend project 1: Trading Card">
             <figcaption>
               <h2>Trading Card</h2>
@@ -158,7 +175,17 @@
           <figure id="project-2" class="project">
             <img
               class="projectImg"
-              src="img/portfolio.jpg"
+              src="img/portfolio_640.jpg"
+              srcset="img/portfolio_365.jpg 365w,
+                      img/portfolio_640.jpg 640w,
+                      img/portfolio_605.jpg 605w,
+                      img/portfolio_405.jpg 810w,
+                      img/portfolio_430.jpg 430w"
+              sizes="(max-width: 380px) 365px,
+                     (max-width: 655px) 640px,
+                     (max-width: 768px) 605px,
+                     (max-width: 1024px) 810px,
+                     430px"
               alt="Udacity fend project 2: portfolio">
             <figcaption>
               <h2>Portfolio</h2>
@@ -169,7 +196,17 @@
           <figure id="project-3" class="project">
             <img
             class="projectImg"
-            src="img/reinventer.jpg"
+            src="img/reinventer_810.jpg"
+              srcset="img/reinventer_365.jpg 365w,
+                      img/reinventer_640.jpg 640w,
+                      img/reinventer_605.jpg 605w,
+                      img/reinventer_405.jpg 810w,
+                      img/reinventer_430.jpg 430w"
+              sizes="(max-width: 380px) 365px,
+                     (max-width: 655px) 640px,
+                     (max-width: 768px) 605px,
+                     (max-width: 1024px) 810px,
+                     430px"
             alt="Réinventer l'espace Website">
             <figcaption>
               <h2>Réinventer l'espace</h2>
