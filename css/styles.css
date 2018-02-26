@@ -135,9 +135,10 @@ main {
 
 .projectImg {
   box-sizing: border-box;
+  border-style: solid;
   max-width: 100%;
   min-height: 300px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* setting the design of the icons */
