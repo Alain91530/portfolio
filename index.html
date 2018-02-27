@@ -106,11 +106,18 @@
 <!--       credit for responsive image:
            https://pixabay.com/fr/sensible-illustration-page-seo-2044932/ -->
 
-<!--       This image weight (12.7ko) is light enough. I just adust the size
-           to the max size wich will be displayed.                        -->
+<!--       Due to pixel ratio this image doesn't need to be modified the size
+              - Nexus 5: 121x3=363
+                      or 120x3=360
+              - iPad: 154x2=372
+                   or 205x2=410
+              - Desktop: 380x1=380
+           a 400px width will fit all cases without to much loss nor loading
+           time.                                                          -->
+
         <img
           class="img-illustration"
-          src="img/responsive_360.png"
+          src="img/responsive_400.png"
 
           alt="Responsive design matters!">
       </figure>
@@ -122,9 +129,7 @@
 ***************************************************************************-->
 
       <div id="project-all">
-        <div id="recent">
-          <h3>Recent Work</h3>
-        </div>
+
 <!--**************************************************************************
 *                                                                            *
 *  Setting blocks for each project                                           *
@@ -138,38 +143,47 @@
 
 <!--  responsive image loading the right size with srcset
       For a real web site, the different sizes might not need so
-      many choices. Made only beacuse it was a praticizing exercice
+      many choices as images have a light weight in ko.
+      Made beacuse it was a praticizing exercice
       The following table gives display parameters for the images for Each
       device (the actual width for a vertical Nexus is 365 but I use 420 for
       devices a bit wider).
 
 ******************************************************************************
-| device     |  width   | max width displayed | image used
+| device     |  width   | max width displayed | px ratio |  image used
 ******************************************************************************
-| Nexus 5    |          |                     |
-| vertical   |  420 px  |       414 px        | img_430.jpg
-| horizontal |  640 px  |       805 px        | img_810.jpg
+| Nexus 5    |          |                     |          |
+| vertical   |  420 px  |       414 px        |     x3   |  img_1250.jpg
+| horizontal |  640 px  |       478 px        |     x3   |  img_1450.jpg
 ******************************************************************************
-| iPad       |          |                     |
-| vertical   |  768 px  |       605 px        | img_605.jpg
-| horizontal |  1024 px | proj 1    : 810 px  | img_810.jpg
-|            |          | proj 2 & 3: 405 px  | img_430.jpg
+| iPad       |          |                     |          |
+| vertical   |  768 px  |       605 px        |     x2   |  img_1250.jpg
+| horizontal |  1024 px | proj 1    : 810 px  |     x2   |  img_1650.jpg
+|            |          | proj 2 & 3: 405 px  |     x2   |  img_810.jpg
 ******************************************************************************
-| desktop    | 1025+ px |       430 px        | img_430.jpg
+| desktop    | 1025+ px |       430 px        |     x1   |  img_450 .jpg
 ******************************************************************************
-          The fall-back is the widest image img_810.px.
+          The fall-back is the widest image img_1600.px.
 ***************************************************************************-->
+
+<!-- Tittle for recent works                                               -->
+
+        <div id="recent">
+          <h3>Recent Work</h3>
+        </div>
+
+<!-- projects                                                              -->
 
         <figure id="project-1" class="project">
           <img
             class="projectImg"
-            src="img/tradingcard_810.jpg"
-            srcset="img/tradingcard_430.jpg 430w,
-                    img/tradingcard_605.jpg 605w,
-                    img/tradingcard_810.jpg 810w,
-                    img/tradingcard_430.jpg 430w"
-            sizes="(max-width: 420px) 430px,
-                   (max-width: 768px) 605px,
+            src="img/tradingcard_1600.jpg"
+            srcset="img/tradingcard_1250.jpg 415w,
+                    img/tradingcard_1450.jpg 478w,
+                    img/tradingcard_1650.jpg 810w,
+                    img/tradingcard_450.jpg 430w"
+            sizes="(max-width: 420px) 414px,
+                   (max-width: 768px) 478px,
                    (max-width: 1024px) 810px,
                    430px"
             alt="Udacity fend project 1: Trading Card">
@@ -182,12 +196,14 @@
         <figure id="project-2" class="project">
           <img
             class="projectImg"
-            src="img/portfolio_810.jpg"
-            srcset="img/portfolio_430.jpg 430w,
-                    img/portfolio_605.jpg 605w,
-                    img/portfolio_430.jpg 430w"
-            sizes="(max-width: 420px) 430px,
-                   (max-width: 768px) 605px,
+            src="img/portfolio_1600.jpg"
+            srcset="img/portfolio_1250.jpg 415w,
+                    img/portfolio_1450.jpg 605w,
+                    img/portfolio_1250.jpg 478w
+                    img/portfolio_450.jpg 430"
+            sizes="(max-width: 420px) 605px,
+                   (max-width: 768px) 405px,
+                   (max-width: 1024px) 430px,
                    430px"
             alt="Udacity fend project 2: portfolio">
           <figcaption>
@@ -199,9 +215,9 @@
         <figure id="project-3" class="project">
           <img
             class="projectImg"
-            src="img/reinventer_810.jpg"
-            srcset="img/reinventer_430.jpg 430w,
-                    img/reinventer_605.jpg 605w,
+            src="img/reinventer_1600.jpg"
+            srcset="img/reinventer_1250.jpg 415w,
+                    img/reinventer_1250.jpg 605w,
                     img/reinventer_430.jpg 430w"
             sizes="(max-width: 420px) 420px,
                    (max-width: 768px) 605px,
@@ -217,10 +233,11 @@
     </section>
 
   </main>
+
   <footer>
 <!--**************************************************************************
 *                                                                            *
-*  Credit for social icons: https://simpleicons.org/    (CCO Licence         *
+*  Credit for social icons: https://simpleicons.org/    (CCO Licence)        *
 *                                                                            *
 ***************************************************************************-->
     <div class="social-footer">
@@ -229,7 +246,7 @@
       <a class="social" href="https://plus.google.com/116754634481981947188"><img class="social-icons" src="img/googleplus.svg" alt=""></a>
       <a class="social" href="https://github.com/Alain91530/portfolio"><img class="social-icons" src="img/github.svg" alt=""></a>
     </div>
-</footer>
+  </footer>
 
 </body>
 </html>
