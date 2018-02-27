@@ -185,11 +185,13 @@ main {
 
 /*******************************
 
-  Breakpoint for small screens.
+  Breakpoint for Nexus and other
+  mobiles held vertically.
+  Up to 420px width
 
 *******************************/
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   #name {
   font-size: 0.7em;
   }
@@ -210,56 +212,22 @@ main {
   }
 }
 
-/*******************************
-
-  Breakpoint for Nexus 5
-
-  Actual width of Nexus 5 is 640
-  but breakpoint is set at 655
-  for better responsivness on
-  other width
-
-********************************/
-
-@media screen and (min-width: 381px) and (max-width: 655px) {
-
-  #name {
-    font-size: 1em;
-  }
-
-  #job {
-    font-size: 1.1em;
-  }
-
-  #illustration {
-    font-size: 1.5em;
-    height: 200px;
-  }
-
-  .logo {
-    width: 20%;
-  }
-
-  .project {
-    width: 100%;
-  }
-}
-
-
-/*******************************
+/*********************************
 
     Breakpoint for vertical iPad
+    and devices wider than 420 px
 
 
-*******************************/
+*********************************/
 
-@media screen and (min-width: 656px) and (max-width: 768px) {
+@media screen and (min-width: 421px) and (max-width: 768px) {
 
   /* Set illustration like a left side bar */
+
   #illustration {
     width: 20%;
     background-size: contain;
-    font-size: 1.5em;
+    font-size: .95em;
     height: auto;
   }
 
@@ -310,7 +278,7 @@ main {
   /* Setting size and all for the illustration image */
 
   #illustration {
-    width: 20%;
+    width: 30%;
     background-size: contain;
     font-size: 1.2em;
     padding-top: 1em;
@@ -348,7 +316,7 @@ main {
   }
 
   #project-all {
-    width: 80%;
+    width: 70%;
   }
 
   /* Ajdust padding to get "Recent works" at the proper place */
