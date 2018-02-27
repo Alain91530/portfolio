@@ -9,10 +9,12 @@ h4 {
   font-weight: lighter;
   text-transform: uppercase;
 }
+
 h1,
 h2 {
   margin-bottom: 0;
 }
+
 h3 {
   padding-left: .5em;
 }
@@ -51,7 +53,6 @@ header {
   padding-top: 5px;
   position: fixed;             /* fixed header  at the top */
   top: 0;
-
   width: 100%;
 }
 
@@ -61,17 +62,13 @@ main {
   width: 100%;
 }
 
-#recent {
-  width: 100%;
-}
-
 /*****************************
 
   Settings of Classes and Ids
 
 *****************************/
 
-/*Setting a back ground for the illustration image */
+/*Setting a background for the illustration image */
 
 #illustration {
   background-color: #02b3e4;
@@ -141,6 +138,10 @@ main {
   object-fit: cover;
 }
 
+#recent {
+  width: 100%;
+}
+
 /* setting the design of the icons */
 
 .social {
@@ -184,8 +185,7 @@ main {
 
 /*******************************
 
-  Breakpoint for very small
-  screens
+  Breakpoint for small screens.
 
 *******************************/
 
@@ -196,11 +196,6 @@ main {
   #job {
   font-size: 0.9em;
   }
-/*  .description {
-    font-size: 1em;
-    height: 15%;
-    padding-top: 250px;
-  } */
 
   #illustration {
     font-size: 1.5em;
@@ -208,9 +203,7 @@ main {
   }
 
   .logo {
-    width: 20%; /*
-    max-width: 3em;
-    max-height: 3em;*/
+    width: 20%;
   }
   .project {
     width: 100%;
@@ -229,9 +222,6 @@ main {
 ********************************/
 
 @media screen and (min-width: 381px) and (max-width: 655px) {
-/*  main {
-    padding-top: 80px;
-    }*/
 
   #name {
     font-size: 1em;
@@ -241,22 +231,15 @@ main {
     font-size: 1.1em;
   }
 
-  /*.description {
-    font-size: 1em;
-    height: 15%;
-    padding-top: 250px;
-  }*/
-
   #illustration {
     font-size: 1.5em;
     height: 200px;
   }
 
   .logo {
-    width: 20%; /*
-    max-width: 3em;
-    max-height: 3em;*/
+    width: 20%;
   }
+
   .project {
     width: 100%;
   }
@@ -272,9 +255,6 @@ main {
 
 @media screen and (min-width: 656px) and (max-width: 768px) {
 
-  /*.description {
-    padding-top: 450px;
-  }
   /* Set illustration like a left side bar */
   #illustration {
     width: 20%;
@@ -282,17 +262,18 @@ main {
     font-size: 1.5em;
     height: auto;
   }
+
   .img-illustration {
     max-width: 100%;
   }
 
-    #name {
-      font-size: 1em;
+  #name {
+    font-size: 1em;
     }
 
-    #job {
-      font-size: 1.2em;
-    }
+  #job {
+    font-size: 1.2em;
+  }
 
   /* Display projects verticatilly in the rest of the screen */
 
@@ -326,7 +307,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-  /* Setting sze and all for the illustration image */
+  /* Setting size and all for the illustration image */
 
   #illustration {
     width: 20%;
@@ -355,6 +336,7 @@ main {
   #project-1 {
     width: 100%;
   }
+  /* First project of the second row has margin */
 
   #project-2 {
   padding-right: 1%;
@@ -368,6 +350,7 @@ main {
   #project-all {
     width: 80%;
   }
+
   /* Ajdust padding to get "Recent works" at the proper place */
 
   #recent {
@@ -383,9 +366,9 @@ main {
 
 @media screen and (min-width: 1025px) {
 
-    /* Adjust padding to Display
-       "Responsive design matters"
-       inside the image             */
+/* Adjust padding to Display
+   "Responsive design matters"
+   inside the image             */
 
   .content {
     padding-top: 100px;
