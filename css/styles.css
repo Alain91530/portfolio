@@ -7,7 +7,7 @@ h1 {
   font-size: 4vw;
   font-weight: lighter;
   margin-bottom: 0;
-
+  text-transform: uppercase;
 }
 h3,
 h4 {
@@ -17,7 +17,7 @@ h4 {
 }
 
 h2 {
-  font-size: 2vw;
+/*  font-weight: lighter;*/
   margin-bottom: 0;
 }
 
@@ -33,12 +33,15 @@ h4 {
 
 */
 body {
-  background-color: lightblue;
+/*  background-color: lightblue;*/
   font-family: sans-serif;
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
   padding-top: 100px;
+}
+footer {
+  background-color: lightblue;
 }
 
 figure {
@@ -49,13 +52,14 @@ figure {
 /* Header fixed at top of the page */
 
 header {
-  background-color: lightblue; /* Hiding content scrolling over the header */
+  background-color: lightblue;
   border-width: 0 0 thick 0;
   border-color: #7d97ad;
   border-style: solid;
   display: flex;
   flex-wrap: wrap;
   max-width: 1280px;           /* same max width as body   */
+  min-height: 98px;
   padding-top: 5px;
   position: fixed;             /* fixed header  at the top */
   top: 0;
@@ -80,7 +84,7 @@ main {
   background-color: #02b3e4;
   font-size: 3em;
   height: 400px;
-  margin: 0em;
+  margin: 0;
   width: 100%;
 }
 
@@ -102,21 +106,19 @@ main {
 }
 
 /* Initial design of the name and logo in the header */
-
+#name-job {
+  width: 89%;
+}
 #name {
-  background-image: url("../img/logo.svg");
-  /* credit for logo image:
-      https://pixabay.com/       */
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
   font-size: 3em;
-  font-weight: lighter;
   margin-top: 0;
   margin-right: 5px;
   text-align: right;
   text-transform: uppercase;
   width: 100%;
+}
+#logo {
+  width: 10%;
 }
 
 /* Initial design of each project */
@@ -145,7 +147,13 @@ main {
 }
 
 #recent {
+  font-size: 3.5vw;
+  margin-top: 0;
   width: 100%;
+}
+
+.responsive {
+  padding-top: 8vw;
 }
 
 /* setting the design of the icons */
@@ -236,6 +244,7 @@ main {
     background-size: contain;
     font-size: .95em;
     height: auto;
+/*    margin-top: 10vw;*/
     width: 20%;
   }
 
@@ -243,14 +252,10 @@ main {
     max-width: 100%;
   }
 
-  #name {
-    font-size: 1em;
-    }
+.responsive {
+  padding-top: 5vw;
+}
 
-/*#job {
-    font-size: 1.2em;
-  }
-*/
   /* Display projects verticatilly in the rest of the screen */
 
   #project-1 {
@@ -268,6 +273,9 @@ main {
   #project-all {
     width: 80%;
   }
+/*  #recent {
+    margin-top: 5vw;
+  }*/
 }
 
 /************************************
@@ -297,14 +305,8 @@ main {
     max-width: 100%;
     }
 
-  /* Adjust size of text in the header */
-
-/*  #job {
-    font-size: 1.2em;
-  }
-*/
-  #name {
-    font-size: 1em;
+  .responsive {
+    padding-top: 6vw;
   }
 
   /* Setting width of projects */
@@ -330,7 +332,7 @@ main {
   /* Ajdust padding to get "Recent works" at the proper place */
 
   #recent {
-    padding-top: .75em;
+    margin-top: 4vw;
   }
 }
 /************************************
@@ -346,7 +348,7 @@ main {
    "Responsive design matters"
    inside the image             */
 
-  .content {
+/*  .content {
     padding-top: 100px;
   }
 
@@ -384,7 +386,7 @@ main {
     width: 100%
   }
 
-  #recent {
+/*  #recent {
     padding-top: .75em;
   }
-}
+}*/
