@@ -6,31 +6,28 @@
 p {
   display: block;
 }
+
 h1 {
   font-size: 4vw;
   font-weight: lighter;
   margin-bottom: 0;
-  text-align: right;
   text-transform: uppercase;
 }
+
 h3,
 h4 {
   font-size: 3vw;
   font-weight: lighter;
-/*  text-align: right;*/
+  margin-top: 0;
   text-transform: uppercase;
 }
 
 h2 {
-/*  font-weight: lighter;*/
   margin-bottom: 0;
 }
 
 h3 {
   padding-left: .5em;
-}
-h4 {
-  margin-top: 0;
 }
 /*
 
@@ -46,6 +43,7 @@ body {
   max-width: 1280px;
   padding-top: 15vw;
 }
+
 footer {
   background-color: lightblue;
 }
@@ -56,6 +54,8 @@ figure {
 }
 
 /* Header fixed at top of the page */
+/* It uses the flexbox to organize */
+/* name, job and Logo              */
 
 header {
   background-color: lightblue;
@@ -64,10 +64,12 @@ header {
   border-style: solid;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1280px;           /* same max width as body   */
-  /*min-height: 98px;*/
+  /* same max width as body   */
+  /* to get the same margins  */
+  max-width: 1280px;
   padding-top: 5px;
-  position: fixed;             /* fixed header  at the top */
+/* fixed header  at the top */
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -94,14 +96,15 @@ main {
   max-width: 100%;
 }
 
-/* Initial settings of the illustration image */
+/* Initial settings of the illustration image     */
 
 .img-illustration {
   object-fit: contain;
   max-width: 30%;
 }
 
-/* Initial design of the name and logo in the header */
+/* Initial design of the name, job and logo in the header */
+
 #name-job {
   text-align: right;
   width: 89%;
@@ -131,7 +134,10 @@ main {
 .project-img {
   box-sizing: border-box;
   border-style: solid;
-  max-width: 100%;
+  width: 100%;
+  /* min heigth is set order to have a big  */
+  /* image regardles of the wodth of the    */
+  /* and size defined for the projects      */
   min-height: 300px;
   object-fit: cover;
 }
@@ -172,7 +178,7 @@ main {
 
 }
 
-/* Setting the work conainer as a a flexbox */
+/* Setting the work conainer as a flexbox */
 
 #work{
   box-sizing: border-box;
@@ -197,6 +203,7 @@ main {
 *******************************/
 
 @media screen and (max-width: 420px) {
+
   #name {
   font-size: 1vw;
   }
@@ -212,6 +219,11 @@ main {
 
   .project {
     width: 100%;
+  }
+
+  .project-img {
+    object-fit: contain;
+    border: 0;
   }
 }
 
@@ -259,8 +271,9 @@ main {
   #project-all {
     width: 80%;
   }
+
   #recent {
-    width: 80%;
+    max-width: 80%;
   }
 }
 
@@ -270,7 +283,7 @@ main {
 
       Illustration as a left side bar
       First project full width of the
-      rest of screens.
+      rest of screen.
       2 last project 50% each
 
 ************************************/
@@ -285,11 +298,11 @@ main {
     height: auto;
     padding-top: 1em;
     width: 30%;
-    }
+  }
 
   .img-illustration {
     max-width: 100%;
-    }
+  }
 
   .responsive {
     padding-top: 6vw;

@@ -10,7 +10,7 @@ The portfolio diplays the name and job of the author, an illustration image and 
 Responsivness is mostly designed for Desktop, Apple Ipad and Nexus 5 but it should be ok on most devices.
 It have been tested with Chrome Dev. Tools and on a real Galaxy S4.
 
-The portfolio has 5 different views according to the size of the device's screen.
+The portfolio has 4 different views according to the size of the device's screen.
 
 * Mobile (same view for horizontal or vertical)
 * Tablet (vertical)
@@ -31,8 +31,7 @@ _Mockup_: https://www.udacity.com
 
 _Logo and responsive illustration_: https://www.pixabay.com
 
-### Known issues
-With very small screens (width<230px),the header have some issues, the text covers the logo. The only fix would be to hide the logo. I didn't do it as per the project review document.
+
 ### Possible issues
 Never tested on very large screen like HD or 4k TV set.
 ### License
