@@ -88,16 +88,12 @@
       <img src="img/logo.svg" alt="Logo">
     </div>
     <div id="name-job">
-    <div id="name">
-        <h1>Alain CADENAT</h1>
-      </div>
-    <div id="job">
-        <h4>Nano Degree student</h4>
-      </div>
+      <h1>Alain CADENAT</h1>
+      <h4>Nano Degree student</h4>
     </div>
   </header>
 
-  <main class="content">
+<!--  <main class="content"> -->
 
     <section id="work">
 
@@ -107,25 +103,31 @@
 *                                                                            *
 ***************************************************************************-->
       <figure id="illustration">
-        <p class="responsive">Responsive design matters!<p>
-<!--       credit for responsive image:
+
+<!--     credit for responsive image:
            https://pixabay.com/fr/sensible-illustration-page-seo-2044932/ -->
 
-<!--       Due to pixel ratio this image doesn't need to be modified the size
+<!--     Due to pixel ratio this image doesn't need to be modified the size
               - Nexus 5: 121x3=363
                       or 120x3=360
               - iPad: 154x2=372
-                   or 205x2=410
+                or 205x2=410
               - Desktop: 380x1=380
-           a 400px width will fit all cases without to much loss nor loading
-           time.                                                          -->
+         a 400px width will fit all cases without too much loss nor loading
+         time.                                                          -->
+        <figcaption class="responsive">Responsive design matters!</figcaption>
 
         <img
           class="img-illustration"
+
           src="img/responsive_400.png"
 
           alt="Responsive design matters!">
       </figure>
+
+
+
+
 
 <!--**************************************************************************
 *                                                                            *
@@ -134,6 +136,10 @@
 ***************************************************************************-->
 
       <div id="project-all">
+      <!-- Tittle for recent works                                               -->
+        <div id="recent">
+          <h3>Recent Work</h3>
+        </div>
 
 <!--**************************************************************************
 *                                                                            *
@@ -171,17 +177,11 @@
           The fall-back is the widest image img_1600.px.
 ***************************************************************************-->
 
-<!-- Tittle for recent works                                               -->
-
-        <div id="recent">
-          <h3>Recent Work</h3>
-        </div>
-
 <!-- projects                                                              -->
 
         <figure id="project-1" class="project">
           <img
-            class="projectImg"
+            class="project-img"
             src="img/tradingcard_1600.jpg"
             srcset="img/tradingcard_1250.jpg 415w,
                     img/tradingcard_1450.jpg 478w,
@@ -200,12 +200,12 @@
 
         <figure id="project-2" class="project">
           <img
-            class="projectImg"
+            class="project-img"
             src="img/portfolio_1600.jpg"
             srcset="img/portfolio_1250.jpg 415w,
                     img/portfolio_1450.jpg 605w,
-                    img/portfolio_1250.jpg 478w
-                    img/portfolio_450.jpg 430"
+                    img/portfolio_1250.jpg 478w,
+                    img/portfolio_450.jpg 430w"
             sizes="(max-width: 420px) 605px,
                    (max-width: 768px) 405px,
                    (max-width: 1024px) 430px,
@@ -219,11 +219,11 @@
 
         <figure id="project-3" class="project">
           <img
-            class="projectImg"
+            class="project-img"
             src="img/reinventer_1600.jpg"
             srcset="img/reinventer_1250.jpg 415w,
                     img/reinventer_1250.jpg 605w,
-                    img/reinventer_430.jpg 430w"
+                    img/reinventer_450.jpg 430w"
             sizes="(max-width: 420px) 420px,
                    (max-width: 768px) 605px,
                    430px"
@@ -237,7 +237,7 @@
       </div>
     </section>
 
-  </main>
+<!--  </main> -->
 
   <footer>
 <!--**************************************************************************
